@@ -26,28 +26,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mornrain.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="四月8 日  Our lives were a cycle—the cycle of day, the cycle of the seasons—circles of perpetual change that —《当你像鸟飞往你的山》    对话的目的是什么？ 自己还是会受到主观意识的影响，根据自己对这个人的认识而决定自己对其言说内容的可信程度，并时常聊着聊着发觉讨论并无意义而开始变得沉默不语。">
+    <meta name="description" content="Node.jsnode 下的一些开发工具汇总 nodemon(GitHub Alias) nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are det">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="漱想集（二）">
-<meta property="og:url" content="https://mornrain.github.io/2022/04/08/%E6%BC%B1%E6%83%B3%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+<meta property="og:title" content="developTools">
+<meta property="og:url" content="https://mornrain.github.io/2022/05/21/developTools/index.html">
 <meta property="og:site_name" content="白日梦想家">
-<meta property="og:description" content="四月8 日  Our lives were a cycle—the cycle of day, the cycle of the seasons—circles of perpetual change that —《当你像鸟飞往你的山》    对话的目的是什么？ 自己还是会受到主观意识的影响，根据自己对这个人的认识而决定自己对其言说内容的可信程度，并时常聊着聊着发觉讨论并无意义而开始变得沉默不语。">
+<meta property="og:description" content="Node.jsnode 下的一些开发工具汇总 nodemon(GitHub Alias) nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are det">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-08T09:07:23.000Z">
-<meta property="article:modified_time" content="2022-04-24T15:33:00.000Z">
+<meta property="article:published_time" content="2022-05-21T04:56:32.000Z">
+<meta property="article:modified_time" content="2022-05-21T05:56:32.000Z">
 <meta property="article:author" content="Morain">
-<meta property="article:tag" content="漱想集">
+<meta property="article:tag" content="developTools">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://mornrain.github.io/2022/04/08/%E6%BC%B1%E6%83%B3%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/">
+<link rel="canonical" href="https://mornrain.github.io/2022/05/21/developTools/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://mornrain.github.io/2022/04/08/%E6%BC%B1%E6%83%B3%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/","path":"2022/04/08/漱想集（二）/","title":"漱想集（二）"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://mornrain.github.io/2022/05/21/developTools/","path":"2022/05/21/developTools/","title":"developTools"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>漱想集（二） | 白日梦想家</title>
+<title>developTools | 白日梦想家</title>
   
 
 
@@ -123,7 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E6%9C%88"><span class="nav-number">1.</span> <span class="nav-text">四月</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8%E6%97%A5"><span class="nav-number">1.1.</span> <span class="nav-text">8 日</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24%E6%97%A5"><span class="nav-number">1.2.</span> <span class="nav-text">24 日</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E6%9C%88"><span class="nav-number">2.</span> <span class="nav-text">五月</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#25%E6%97%A5"><span class="nav-number">2.1.</span> <span class="nav-text">25 日</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Node-js"><span class="nav-number">1.</span> <span class="nav-text">Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#nodemon"><span class="nav-number">1.1.</span> <span class="nav-text">nodemon</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Installation"><span class="nav-number">1.1.1.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Usage"><span class="nav-number">1.1.2.</span> <span class="nav-text">Usage</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -199,7 +199,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mornrain.github.io/2022/04/08/%E6%BC%B1%E6%83%B3%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="https://mornrain.github.io/2022/05/21/developTools/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/2022-03-25-1.png">
@@ -212,12 +212,12 @@
     </span>
     
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="漱想集（二） | 白日梦想家">
+      <meta itemprop="name" content="developTools | 白日梦想家">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          漱想集（二）
+          developTools
         </h1>
 
         <div class="post-meta-container">
@@ -227,15 +227,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2022-04-08 17:07:23" itemprop="dateCreated datePublished" datetime="2022-04-08T17:07:23+08:00">2022-04-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-04-24 23:33:00" itemprop="dateModified" datetime="2022-04-24T23:33:00+08:00">2022-04-24</time>
+      <time title="创建时间：2022-05-21 12:56:32 / 修改时间：13:56:32" itemprop="dateCreated datePublished" datetime="2022-05-21T12:56:32+08:00">2022-05-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -243,7 +237,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%BC%B1%E6%83%B3%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">漱想集</span></a>
+          <a href="/categories/developTools/" itemprop="url" rel="index"><span itemprop="name">developTools</span></a>
         </span>
     </span>
 
@@ -263,8 +257,8 @@
       </span>
       <span class="post-meta-item-text">评论：</span>
     
-    <a title="disqus" href="/2022/04/08/%E6%BC%B1%E6%83%B3%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/04/08/漱想集（二）/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2022/05/21/developTools/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/05/21/developTools/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -275,14 +269,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.4k</span>
+      <span>727</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
+      <span>1 分钟</span>
     </span>
 </div>
 
@@ -293,51 +287,39 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="四月"><a href="#四月" class="headerlink" title="四月"></a>四月</h2><h3 id="8日"><a href="#8日" class="headerlink" title="8日"></a>8 日</h3><ul>
-<li><blockquote>
-<p>Our lives were a cycle—the cycle of day, the cycle of the seasons—circles of perpetual change that</p>
-<p align="right">—《当你像鸟飞往你的山》</p> 
-</blockquote>
-</li>
-<li><p>对话的目的是什么？</p>
-<p>自己还是会受到主观意识的影响，根据自己对这个人的认识而决定自己对其言说内容的可信程度，并时常聊着聊着发觉讨论并无意义而开始变得沉默不语。</p>
-<p>每个人讲话都有其自身的出发点与角度，不能因为对方讲的都是专业内容就认为正确而听之任之，也不能因为抓住一两处错误就认为荒唐而全盘否定，前后推导得出这些话的因果关系也能帮助自己有新的收获。</p>
-<p>对话的目的还是帮助我们对世界有更全面的认知，认知世界需要一定的观点，我们从日常生活中的所见所闻收获了零零星星的认知片段，如何将这些系统的形成自己的认知方法论，变成自己对世界的理解，以及后续可以作为自己的价值观清晰、有条理的进行叙述输出，我们思考后得出结论，然而这个结论还需要通过实践得到检验，同时确保自己不会在错误的方法道路上越走越偏。实践的最好方法之一莫不过是与人交谈。与人交谈，我们可以获取不同人对同一事件经过其价值观整理出的看法，他讨论的事情出发点是什么，如何得出这样的结论等等，这都是事后值得我们反思的。</p>
-<p>对话的最终目的应该是思想上的碰撞，我虽然而且也不必信服你的整个理论，你的整个态度，但我能从这场对话中修正了我的某些观点，从而深化自己，那便是最终意义。</p>
-<span id="more"></span></li>
-</ul>
-<h3 id="24日"><a href="#24日" class="headerlink" title="24日"></a>24 日</h3><ul>
-<li><p>今天社区又发了些不痛不痒的物资：面粉、小面包、小圆饼干、咸鸭蛋…</p>
-</li>
-<li><p>看了眼冰箱，明天能做什么菜呢，想了想，就随便做个老干妈洋葱豌豆玉米胡萝卜鸡蛋火腿炒饭吧</p>
-</li>
-<li><p>感受了两天的赶 deadline 带来的充实高效生活，最近的生活还是没有 work 要完成就会被精神内耗填满，老板借由这次 work 也发来几句中肯之言，也是自己之前反思到但无法一蹴而就的解决的问题：</p>
-<ul>
-<li><p>陷入自己的舒适圈不敢踏出，把自己局限其中</p>
-<p>​        其实这原因归结起来主要两点：精力有限和缺乏尝试的勇气</p>
-<ul>
-<li><p>现在开始觉得自己精力越发有限，好像对学习以外的内容都十分感兴趣，越发追逐效率至上，然而又一味的每天空耗在效率低下的感叹中（每天的固定时间消耗：疫情在家每天做饭 2.5h， 饭后休息 1.5h，吃饭 1h，健身 1h，跑步 40min，游戏娱乐 30min）</p>
-</li>
-<li><p>精力有限也是缺乏尝试的勇气的一部分原因，试错成本越来越高的担忧，担心 “失败” 这件事对自己影响的担忧等等。道理都懂但还是行动力跟不上，总是瞻前顾后的畏首畏尾，还是要沉浸在事情本身，边做边思考，减少思考意义的时间，多花时间在 “学习，了解，完成” 上：路还长，变数还很多，谋而后动没有错，担心看的不够远，容易走错路，但看的太远，就会被脚下的石头绊倒，慢慢走一步看一步，不要因为担心失败而放弃尝试，从失败中找经验，切记不可沉浸在 “失败” 这件事上</p>
-</li>
-</ul>
-</li>
-<li><p>合作时无法发挥主观能动性</p>
-<ul>
-<li>在意沟通影响效率，那就要充分发挥自己的主观能动性和对事情的掌控力，这样别人也才放心把任务交给你去完成</li>
-<li>做事有始有终，每次可以多走一步，不要只完成别人交代给你的就觉得任务完成了，想想交给你任务的目的，和任务的意义，加上自己的思考，争取完美的去完成（成为工作狂的第一步？）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="五月"><a href="#五月" class="headerlink" title="五月"></a>五月</h2><h3 id="25日"><a href="#25日" class="headerlink" title="25日"></a>25 日</h3><ul>
-<li>读《悉达多》<ul>
-<li>每个人都在追寻自我，什么是 “我”，如何成为一个独立的 “我”，其他人的寻道讲法终归只是他人的，如何找到属于自己的道？</li>
-</ul>
-</li>
-<li>学到了一个新的词，顺颂商祺：顺便祝你工作顺利的意思。 过去多用于信函的结尾，“祺” 有吉祥之意。 对商人的祝愿一类的意思，但一般不是祝贺。</li>
-</ul>
+        <h1 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h1><p>node 下的一些开发工具汇总</p>
+<h2 id="nodemon"><a href="#nodemon" class="headerlink" title="nodemon"></a>nodemon</h2><p>(<a target="_blank" rel="noopener" href="https://github.com/remy/nodemon">GitHub Alias</a>)</p>
+<p>nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.</p>
+<h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save-dev nodemon
+<span class="token comment"># or</span>
+<span class="token function">yarn</span> <span class="token function">add</span> nodemon -D<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>将 nodemon 定义为开发依赖 development dependency 后，<em>package.json</em> 的内容改变如下:</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"express"</span><span class="token operator">:</span> <span class="token string">"^4.17.1"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"devDependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"nodemon"</span><span class="token operator">:</span> <span class="token string">"^2.0.7"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>最好是在 <em>package.json</em> 文件中为它定义一个专用的 <em>npm 脚本</em>:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">{</span>
+  // <span class="token punctuation">..</span>
+  <span class="token string">"scripts"</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"start"</span><span class="token builtin class-name">:</span> <span class="token string">"node index.js"</span>,
+    <span class="token string">"dev"</span><span class="token builtin class-name">:</span> <span class="token string">"nodemon index.js"</span>,    <span class="token string">"test"</span><span class="token builtin class-name">:</span> <span class="token string">"echo <span class="token entity" title="\&quot;">\"</span>Error: no test specified<span class="token entity" title="\&quot;">\"</span> &amp;&amp; exit 1"</span>
+  <span class="token punctuation">}</span>,
+  // <span class="token punctuation">..</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在脚本中，不需要指定 <em>node_modules/.bin/nodemon</em> 到 nodemon ，因为 npm 自己知道从该目录搜索文件。</p>
+<p>我们现在可以在开发模式下使用如下命令启动服务器:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> run dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>与 <em>start</em> 和 <em>test</em> 脚本不同，我们还必须将 <em>run</em> 添加到命令中。</p>
 
     </div>
 
@@ -373,7 +355,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://mornrain.github.io/2022/04/08/%E6%BC%B1%E6%83%B3%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/" title="漱想集（二）">https://mornrain.github.io/2022/04/08/漱想集（二）/</a>
+      <a href="https://mornrain.github.io/2022/05/21/developTools/" title="developTools">https://mornrain.github.io/2022/05/21/developTools/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -382,21 +364,18 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E6%BC%B1%E6%83%B3%E9%9B%86/" rel="tag"># 漱想集</a>
+              <a href="/tags/developTools/" rel="tag"># developTools</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/03/31/react-typescript/" rel="prev" title="react-typescript">
-                  <i class="fa fa-chevron-left"></i> react-typescript
+                <a href="/2022/05/09/redis/" rel="prev" title="redis">
+                  <i class="fa fa-chevron-left"></i> redis
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/04/12/MacApp/" rel="next" title="Mac App 推荐">
-                  Mac App 推荐 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -490,7 +469,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://mornrain.github.io/2022/04/08/%E6%BC%B1%E6%83%B3%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://mornrain.github.io/2022/05/21/developTools/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"morain","count":true,"i18n":{"disqus":"disqus"}}</script>
 <script src="/js/third-party/comments/disqus.js"></script>
